@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import CreatePost from './Components/CreatePost/CreatePost';
 import DisplayPost from './Components/DisplayPost/DisplayPost';
-import Post from './Components/Post/Post';
+
 import './App.css';
 import CustomButton from './Components/CustomButton/CustomButton';
 
 
 function App() {
 
-  const [entries, setEntries] = useState([{name: 'Bob Biggums'}, {post: 'I like pie!'}])
+const [entries, setEntries] = useState([{name:' Bob Biggums', post: 'i like pie'}])
 
   function addNewPost(entry){
 
@@ -25,24 +25,18 @@ function App() {
         <small className="text-muted">Feed</small></h3>
         <div className='col-md-6'>
           <div className='border-box'>
-          <DisplayPost parentPost ={entries} />
+          <DisplayPost parentPosts ={entries} />
           </div>
           <div className='border-box'>
           <CreatePost addNewPostProperty={addNewPost}/>
           </div>
-        </div>
-        <div className='col-md-6'>
-          <div className='border-box'>
-            <Post parentEntries ={entries}/>
-          </div>
-        </div>
       </div>
         <br/>
         <h1>changing Styles on Button Click</h1>
         <br/>
         <CustomButton message="Click Me!"/>
+    </div>
   </div>
   );
-};
-
+  }
 export default App
