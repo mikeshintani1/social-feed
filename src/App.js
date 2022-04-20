@@ -25,7 +25,7 @@ function App() {
         <small className="text-muted">Feed</small></h3>
         <div className='col-md-6'>
           <div className='border-box'>
-          <DisplayPost parentEntries ={entries} />
+          <DisplayPost parentPost ={entries} />
           </div>
           <div className='border-box'>
           <CreatePost addNewPostProperty={addNewPost}/>
