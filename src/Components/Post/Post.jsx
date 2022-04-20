@@ -12,7 +12,9 @@ const PostTracker = (props) => {
         setChartData(tempChartData);
     }, [props.parentPost])
 
-    return (  
+    return (
+
+    
         <Chart 
         chartType = "LineChart"
         data={[["Name", "Post"], ...chartData]}
