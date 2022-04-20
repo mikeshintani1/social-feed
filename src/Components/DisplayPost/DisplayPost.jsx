@@ -1,3 +1,5 @@
+import Post from './Components/Post/Post';
+
 const DisplayPost = (props) => {
     return(
         <table className="table">
@@ -8,12 +10,12 @@ const DisplayPost = (props) => {
                 </tr>
             </thread>
                 <tbody>
-                    {props.parentEntry.map((entry,index) => {
+                    {props.parentPost.map((post,index) => {
                     return(
                         <tr key={index}>
                             <td>{index+1}</td>
-                            <td>{entry.name}</td>
-                            <td>{entry.post}</td>                    
+                            <td>{post.name}</td>
+                            <td>{post.post}</td>                    
                         </tr>
                     );
                     })}
