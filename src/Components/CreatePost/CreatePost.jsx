@@ -24,7 +24,7 @@ const CreatePost = (props) => {
             </div>
             <div className='form-group'>
                 <label>Post</label>
-                <input type='text' className='form-control' value={post} onChange={(event) => setDate(event.target.value)}/>
+                <input type='text' className='form-control' value={post} onChange={(event) => setPost(event.target.value)}/>
             </div>
                 <button type='CREATE' className="btn btn-primary" style={{'margin-top': '1em'}}>CREATE</button>
         </form>
@@ -32,4 +32,4 @@ const CreatePost = (props) => {
 
 }
 
-export default CreatePost;ksks
+export default CreatePost;
