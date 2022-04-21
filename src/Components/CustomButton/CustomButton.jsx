@@ -3,12 +3,19 @@ import "./CustomButton.css"
 
 const CustomButton = (props) => {
 
-    function handleClick(){
+    const [likeButtonClass, setButtonClass] = useState("inactive");
 
+    function handleClick(){
+        if(likeButtonClass === "inactive"){
+            setButtonClass("active");
+        }
+        else{
+            setButtonClass("inactive");
+        }
     }
         return (
             <div>
-                <button className="inactive" onClick={handleClick}>{props.message}</button>
+                <button className={likeButtonClass} onClick={handleClick}>{props.message}</button>
             </div>
         )
 }
