@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './NameForm.css'
 
+
 const NameForm = (props) => {
     const [postName, setName]= useState('');
     const [postComment, setPostComment] = useState('');
