@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-// import CreatePost from './Components/CreatePost/CreatePost';
 import DisplayPost from './Components/DisplayPost/DisplayPost';
-// import NameForm from './Components/NameForm/NameForm';
 import './App.css';
 import CustomButton from './Components/CustomButton/CustomButton';
 import NameForm from './Components/Post/NameForm';
@@ -9,7 +7,7 @@ import NameForm from './Components/Post/NameForm';
 
 function App() {
 
-const [entries, setEntries] = useState([{name:' Bob Biggums', post: 'i like pie'}])
+  const [entries, setEntries] = useState([{name:' Bob Biggums', post: 'i like pie'}])
 
   function addNewPost(entry){
 
@@ -27,10 +25,8 @@ const [entries, setEntries] = useState([{name:' Bob Biggums', post: 'i like pie'
           <div className='border-box'>
           <DisplayPost parentPosts ={entries} />
           </div>
-          <div className='border-box'>
-          {/* <CreatePost addNewPostProperty={addNewPost}/> */}
-          <NameForm parentPosts= {NameForm}/>
-          </div>
+          <div>
+          <NameForm addNewPostProperty={addNewPost}/>
       </div>
         <br/>
         <h1>changing Styles on Button Click</h1>
@@ -38,7 +34,7 @@ const [entries, setEntries] = useState([{name:' Bob Biggums', post: 'i like pie'
         <CustomButton message="Like!"/>
         <CustomButton message="Dislike"/>
     </div>
-  </div>
+  </div></div>
   );
   }
 export default App
