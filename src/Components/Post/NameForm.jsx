@@ -25,7 +25,7 @@ const NameForm = (props) => {
                     <textarea rows="0"cols="50" input type='text' onChange={(event) => setName(event.target.value)}value={postName}></textarea>
                 </div>
             <div>
-                <label>Post</label>
+                <label className='label-post'>Post</label>
                 <textarea className='postBox' rows="10" cols="50" input type='text' onChange={(event) => setPostComment(event.target.value)}value={postComment}></textarea>
                 <button className="postComment" type='onClick'>Post Comment!</button>
                 </div>
