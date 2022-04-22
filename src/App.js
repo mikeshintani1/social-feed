@@ -27,7 +27,9 @@ function App() {
         <div>
       <div className='col-md-16'>
         <div className='border-box'>
+          <div className='row-posts'>
           <DisplayPost parentPosts ={entries} />
+          </div>
           </div>
         <div>
       </div>

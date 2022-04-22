@@ -10,6 +10,17 @@
     border-radius: 50%;
 }
 
+.hateButtonClass{
+    color: rgba(252, 252, 252, 0.781);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+
 button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,17), 0 17px 50px 0 rgba(0,0,0,24);
 
@@ -21,4 +32,12 @@ button:hover {
 
 .inactive{
     background-color: rgb(255, 255, 255);
+}
+
+.likeButtonClass{
+    margin-right: 160px;
+}
+
+.button-col{
+
 }

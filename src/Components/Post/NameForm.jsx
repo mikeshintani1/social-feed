@@ -21,12 +21,12 @@ const NameForm = (props) => {
     return (
             <form onSubmit={handleSubmit} className='form-grid'>
                 <div className='form-group'>               
-                    <label>Name</label>
+                    <label className='label-name'>Name</label>
                     <textarea rows="0"cols="50" input type='text' onChange={(event) => setName(event.target.value)}value={postName}></textarea>
                 </div>
             <div>
-                <label>Post Comment</label>
-                <textarea rows="10" cols="50" input type='text' onChange={(event) => setPostComment(event.target.value)}value={postComment}></textarea>
+                <label>Post</label>
+                <textarea className='postBox' rows="10" cols="50" input type='text' onChange={(event) => setPostComment(event.target.value)}value={postComment}></textarea>
                 <button className="postComment" type='onClick'>Post Comment!</button>
                 </div>
             </form>

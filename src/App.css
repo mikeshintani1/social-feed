@@ -39,7 +39,22 @@
 
 
 .border-box{
-  border: 1px;
+  border: 10px;
+  border-style: solid;
+  border-color: rgb(97, 97, 97);
+}
+
+.col-md-16{
   border-style: solid;
   border-color: black;
+}
+
+.row-posts{
+  border: 15px;
+  border-style: solid;
+  border: #282c34;
+}
+
+.displayPost{
+  margin-left: 100px;
 }

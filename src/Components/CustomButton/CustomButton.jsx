@@ -4,21 +4,27 @@ import "./CustomButton.css"
 const CustomButton = (props) => {
 
     const [likeButtonClass, setButtonClass] = useState("inactive");
-    // const types = ['like', 'dislike'];
+    const [hateButtonClass, setButtonClassHate] = useState("inactive");
     
-    function handleClick(){
+    function handleClicklike(){
         if(likeButtonClass === "inactive"){
-            setButtonClass("active");
-        }
-        else{
+          setButtonClass("active")
+          setButtonClassHate("inactive")
+        }}
+    
+    function handleClickhate(){
+        if(hateButtonClass === "inactive"){
             setButtonClass("inactive");
-        }
-    }
-        return (
-            <div>
-                <button className={likeButtonClass} type='onClick' onClick={handleClick}>{props.message}</button>
-            </div>
-        )
-}
+            setButtonClassHate("active");
+        }}
 
+    return (
+        <div className='button-col'>
+            <button className={likeButtonClass} type='onClick' onClick={handleClicklike} message="like">{props.message}</button>
+            <button className={hateButtonClass} type='onClick' onClick={handleClickhate} message ="hate">{props.message}</button>
+        </div>
+    );
+       
+     
+}
 export default CustomButton
