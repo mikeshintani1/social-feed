@@ -20,12 +20,12 @@ function App() {
     <div className='container-fluid'>
       <div className='row'>
         <h3 style={{margin: '1em'}}>Social Feed</h3>
-        <div className='col-md-6'>
+        <div className='col-md-18'>
           <div className='border-box'>       
            <NameForm addNewPostProperty={addNewPost}/>
           </div>
         <div>
-      <div className='col-md-6'>
+      <div className='col-md-16'>
         <div className='border-box'>
           <DisplayPost parentPosts ={entries} />
           </div>

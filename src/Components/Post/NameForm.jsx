@@ -19,24 +19,17 @@ const NameForm = (props) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>Name</label>
-            <input type='text' onChange={(event) => setName(event.target.value)}value={postName}/>
-            <button type='onClick'>Post Comment!</button>
-        <form onSubmit={handleSubmit}>
-            <label>Post Comment</label>
-            <input type='text' onChange={(event) => setPostComment(event.target.value)}value={postComment}/>
-        </form>
-        <form onSubmit={handleSubmit} className='form-grid'>
-            <div className='form-group'>
-                {/* <label>Name</label> */}
-                {/* <input type='text' className='form-control' value={postName} onChange = {(event) => setName(parseFloat(event.target.value))}/>  */}
-            </div>
-            <div className='form-group'>
-                {/* <label>Post</label> */}
-                {/* <input type='text' className='form-control' value={postComment} onChange={(event) => setPostComment(event.target.value)}/> */}
-            </div>
-        </form></form>
+            <form onSubmit={handleSubmit} className='form-grid'>
+                <div className='form-group'>               
+                    <label>Name</label>
+                    <textarea rows="0"cols="50" input type='text' onChange={(event) => setName(event.target.value)}value={postName}></textarea>
+                </div>
+            <div>
+                <label>Post Comment</label>
+                <textarea rows="10" cols="50" input type='text' onChange={(event) => setPostComment(event.target.value)}value={postComment}></textarea>
+                <button className="postComment" type='onClick'>Post Comment!</button>
+                </div>
+            </form>
     );
 
 }

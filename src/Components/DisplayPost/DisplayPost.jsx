@@ -1,6 +1,7 @@
 
 import CustomButton from '../CustomButton/CustomButton.jsx';
 
+
 const DisplayPost = (props) => {
 
     return(
@@ -18,7 +19,8 @@ const DisplayPost = (props) => {
                         <tr key={index}>
                             <td>{entry.name}</td>
                             <td>{entry.comment}</td>
-                            <td><CustomButton message='Like'/></td>                    
+                            <td><CustomButton message='Like'/></td>
+                            <td><CustomButton message='Hate'/></td>    
                         </tr>
                     );
                     })}

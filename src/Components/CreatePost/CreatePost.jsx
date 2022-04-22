@@ -26,7 +26,7 @@ const CreatePost = (props) => {
                 <label>Post</label>
                 <input type='text' className='form-control' value={post} onChange={(event) => setPost(event.target.value)}/>
             </div>
-                <button type='submit' className="buttonSubmit" style={{'margin-top': '1em'}}>CREATE</button>
+                <button type='onClick' className="buttonSubmit" style={{'margin-top': '1em'}}>CREATE</button>
         </form>
     )
 
